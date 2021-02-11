@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ListaComponent } from './usuarios/lista/lista.component';
 import { UsuarioComponent } from './usuarios/usuario/usuario.component';
@@ -15,7 +16,8 @@ const routes: Routes = [
     RouterModule.forRoot( routes )
   ],
   exports: [
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ]
 })
 export class AppRoutingModule { }
