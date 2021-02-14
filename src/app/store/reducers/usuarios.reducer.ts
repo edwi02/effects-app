@@ -4,14 +4,14 @@ import { cargarUsuarios, cargarUsuariosSuccess, cargarUsuariosError } from '../a
 
 
 export interface UsuariosState {
-    user: Usuario[];
+    users: Usuario[];
     loaded: boolean;
     loading: boolean;
     error: any;
 }
 
 export const usuariosInitialState: UsuariosState = {
-    user: [],
+    users: [],
     loaded: false,
     loading: false,
     error: null,
