@@ -17,4 +17,11 @@ export class UsuarioService {
               map( resp => resp['data'] ) // Retornar la data de la respusta
             );
   }
+
+  getUserById( id: string ): any {
+    return this.http.get(`${ this.url }/users/${ id }`)
+            .pipe(
+              map( resp => resp['data'] ) // Retornar la data de la respusta
+            );
+  }
 }
